@@ -1,6 +1,6 @@
 ﻿var Loader = laya.net.Loader;
 var Handler = laya.utils.Handler;
-
+var Event = Laya.Event;
 (function(){
 	//初始化微信小游戏
 	Laya.MiniAdpter.init();
@@ -12,6 +12,17 @@ var Handler = laya.utils.Handler;
 
 function onAssetLoaded()
 {
-	Laya.stage.addChild(new Game());
+	var a = function(){
+		this.c = 2;
+		console.log(this);
+		console.log(a.prototype);
+	};
+	var b = new a();
+	console.log(b.c);
+	var game = new Game();
+	Laya.stage.addChild(game);
+	var hammer = new Hammer();
+	Laya.stage.addChild(hammer);
+	hammer.start();
 }
 
