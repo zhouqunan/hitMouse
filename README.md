@@ -1,1 +1,2 @@
 # hitMouse
+参照教程基于layaair引擎开发的打地鼠游戏

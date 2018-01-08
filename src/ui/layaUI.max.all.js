@@ -18,8 +18,27 @@ var gameUI=(function(_super){
 
 		}
 
-		gameUI.uiView={"type":"View","props":{"width":1136,"height":640},"child":[{"type":"Image","props":{"y":45,"x":193,"skin":"game/back.png"}}]};
+		gameUI.uiView={"type":"View","props":{"width":1136,"height":640},"child":[{"type":"Image","props":{"y":45,"x":193,"skin":"game/back.png"}},{"type":"Box","props":{"y":212,"x":323},"child":[{"type":"Image","props":{"y":83,"skin":"game/mask-01.png"}},{"type":"Image","props":{"x":6,"skin":"game/mouse_normal_1.png"}},{"type":"Image","props":{"y":13,"x":7,"skin":"game/mouse_hit_1.png"}}]}]};
 		return gameUI;
+	})(View);
+var HandlerUI=(function(_super){
+		function HandlerUI(){
+			
+
+			HandlerUI.__super.call(this);
+		}
+
+		CLASS$(HandlerUI,'ui.HandlerUI',_super);
+		var __proto__=HandlerUI.prototype;
+		__proto__.createChildren=function(){
+		    
+			laya.ui.Component.prototype.createChildren.call(this);
+			this.createView(HandlerUI.uiView);
+
+		}
+
+		HandlerUI.uiView={"type":"View","props":{"width":100,"height":100},"child":[{"type":"Image","props":{"y":62,"x":61,"width":98,"skin":"game/hammer.png","pivotY":51,"pivotX":58,"height":77}}]};
+		return HandlerUI;
 	})(View);
 var TestPageUI=(function(_super){
 		function TestPageUI(){
