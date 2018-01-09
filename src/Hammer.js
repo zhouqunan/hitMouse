@@ -1,7 +1,7 @@
 
 var Hammer = function(){
     Hammer.super(this);
-    var _proto = Hammer.prototype
+    var _proto = Hammer.prototype;
     //锤子开始
     _proto.start = function(){
         //鼠标隐藏

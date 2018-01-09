@@ -18,7 +18,7 @@ var gameUI=(function(_super){
 
 		}
 
-		gameUI.uiView={"type":"View","props":{"width":1136,"height":640},"child":[{"type":"Image","props":{"y":45,"x":193,"skin":"game/back.png"}},{"type":"Box","props":{"y":212,"x":323},"child":[{"type":"Image","props":{"y":83,"skin":"game/mask-01.png"}},{"type":"Image","props":{"x":6,"skin":"game/mouse_normal_1.png"}},{"type":"Image","props":{"y":13,"x":7,"skin":"game/mouse_hit_1.png"}}]}]};
+		gameUI.uiView={"type":"View","props":{"width":1136,"height":640},"child":[{"type":"Image","props":{"y":45,"x":193,"skin":"game/back.png"}},{"type":"Box","props":{"y":212,"x":323,"name":"mouse0"},"child":[{"type":"Image","props":{"y":0,"x":6,"skin":"game/mouse_normal_1.png","name":"normal"}},{"type":"Image","props":{"y":13,"x":7,"skin":"game/mouse_hit_1.png","name":"hitted","alpha":1}},{"type":"Image","props":{"y":83,"x":0,"skin":"game/mask-01.png"}}]}]};
 		return gameUI;
 	})(View);
 var HammerUI=(function(_super){

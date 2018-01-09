@@ -12,17 +12,11 @@ var Event = Laya.Event;
 
 function onAssetLoaded()
 {
-	var a = function(){
-		this.c = 2;
-		console.log(this);
-		console.log(a.prototype);
-	};
-	var b = new a();
-	console.log(b.c);
 	var game = new Game();
 	Laya.stage.addChild(game);
 	var hammer = new Hammer();
 	Laya.stage.addChild(hammer);
 	hammer.start();
 }
+
 
