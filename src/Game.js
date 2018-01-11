@@ -11,6 +11,8 @@ var Game = (function () {
         }
         Laya.timer.loop(2000,this,this.mouseCreate);
     }
+    
+    
     //绑定ui页面
     Laya.class(Game, "Game", gameUI);
     var _proto = Game.prototype;

@@ -29,3 +29,4 @@ function onAssetLoaded()
 	hammer.start();
 }
 
+
