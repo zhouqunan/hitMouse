@@ -3,6 +3,7 @@ var Handler = laya.utils.Handler;
 var Event = Laya.Event;
 var Stage = Laya.Stage;
 var Ease    = Laya.Ease;
+var Sprite = Laya.Sprite;
 (function(){
 	//初始化微信小游戏
 	Laya.MiniAdpter.init();

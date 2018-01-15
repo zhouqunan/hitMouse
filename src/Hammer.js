@@ -10,6 +10,7 @@ var Hammer = function(){
         Laya.stage.on(Event.MOUSE_MOVE,this,this.onMouseMove);
         //锤子定位
         this.onMouseMove();
+        console.log(this.hit);
     }
     _proto.end = function(){
         //鼠标显示
