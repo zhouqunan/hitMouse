@@ -1,4 +1,4 @@
-var Jostick = {function(){
+var Jostick = (function(_super){
     function Jostick(){
         //摇杆箭头
         this.arrow = new Sprite();
@@ -35,4 +35,4 @@ var Jostick = {function(){
         }
 
     }
-}(Laya.Sprite);
+})(Laya.Sprite);

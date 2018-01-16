@@ -21,13 +21,12 @@ function onAssetLoaded()
 {
 	var game = new Game();
 	Laya.stage.addChild(game);
+	game.gameStart();
 	game.y = Laya.stage.height/2;
 	Laya.stage.on(Event.RESIZE,this,function(){
 		game.y = Laya.stage.height/2; 
 	})
-	var hammer = new Hammer();
-	Laya.stage.addChild(hammer);
-	hammer.start();
+	
 }
 
 
